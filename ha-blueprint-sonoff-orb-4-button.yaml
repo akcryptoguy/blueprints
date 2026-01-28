@@ -1,5 +1,5 @@
 blueprint:
-  name: Sonoff SNZB-01M Event Controller
+  name: Sonoff SNZB-01M Orb Event Controller
   description: >
     Control actions for all 16 events (Single, Double, Triple, Long) of the 
     Sonoff SNZB-01M (Orb) using the Event entity in Zigbee2MQTT (Z2M).
