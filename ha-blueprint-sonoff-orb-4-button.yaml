@@ -105,7 +105,7 @@ trigger:
 condition:
   - condition: template
     value_template: >
-      {{ trigger.from_state.state | default('') not in ['unavailable','unknown'] }}
+      {{ (trigger.get('from_state') or {}).get('state','') not in ['unavailable','unknown'] }}       
 action:
   - choose:
       - conditions:
